@@ -1,0 +1,12 @@
+# https://wiki.ubuntu.com/SystemdForUpstartUsers
+# JBR MiddleTier Admin Service
+
+[Unit]
+Description=JBR MiddleTier Admin Service
+After=mysql.service
+
+[Service]
+ExecStart=/usr/bin/java -Xms768M -Xmx768M -Dlogging.config=file:/usr/bin/jbr/MiddleTier-Admin-PDN-log4j.xml -jar /usr/bin/jbr/MiddleTier-Admin-onejar.jar
+
+[Install]
+WantedBy=multi-user.target
