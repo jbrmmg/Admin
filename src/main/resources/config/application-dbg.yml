@@ -1,0 +1,7 @@
+logging:
+  level:
+    ROOT: INFO
+    com.jbr.middletier: DEBUG
+
+server:
+  port: 9003
