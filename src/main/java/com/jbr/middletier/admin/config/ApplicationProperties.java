@@ -2,7 +2,7 @@ package com.jbr.middletier.admin.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix="admin",ignoreUnknownFields = true)
+@ConfigurationProperties(prefix="admin")
 public class ApplicationProperties {
     private String serviceName;
 
